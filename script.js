@@ -50,3 +50,19 @@ do {
         alert("INVALID STATUS! Please enter only: todo, doing, or done");
     }
 } while (task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done");
+
+// Show tasks in console
+console.log("Your tasks:");
+console.log("1. Task 1: " + task1Title + " - Status: " + task1Status);
+console.log("2. Task 2: " + task2Title + " - Status: " + task2Status);
+
+// Check if any tasks are done
+if (task1Status === "done" || task2Status === "done") {
+    console.log("Completed tasks:");
+    if (task1Status === "done") console.log("- " + task1Title);
+    if (task2Status === "done") console.log("- " + task2Title);
+} else {
+    console.log("No tasks completed, let's get to work!");
+}
+
+alert("Tasks saved! Check the console for details (Press F12 and go to Console tab)");
