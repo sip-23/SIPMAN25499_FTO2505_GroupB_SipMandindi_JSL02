@@ -25,3 +25,28 @@ do {
         alert("INVALID STATUS! Please enter only: todo, doing, or done");
     }
 } while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done");
+
+// Ask for second task title and description
+let task2Title = prompt("Enter your second task title:");
+while (!task2Title || task2Title.trim() === "") {
+    task2Title = prompt("Please enter a title for your second task:");
+}
+task2Title = task2Title.trim();
+
+let task2Descr = prompt("Enter your second task description:");
+while (!task2Descr || task2Descr.trim() === "") {
+    task2Descr = prompt("Please enter a description for your second task:");
+}
+task2Descr = task2Descr.trim();
+
+// Get Task 2 status with validation
+let task2Status;
+do {
+    task2Status = prompt("Enter Task 2 status (todo/doing/done):");
+    if (task2Status) {
+        task2Status = task2Status.toLowerCase();
+    }
+    if (task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
+        alert("INVALID STATUS! Please enter only: todo, doing, or done");
+    }
+} while (task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done");
