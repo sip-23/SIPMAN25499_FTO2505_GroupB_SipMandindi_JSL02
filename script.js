@@ -13,3 +13,8 @@ while (!task1Descr || task1Descr.trim() === "") {
     task1Descr = prompt("Please enter a description for your first task:");
 }
 task1Descr = task1Descr.trim();
+
+let task1Status = prompt("Enter status for first task (todo/doing/done):");
+while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done") {
+    task1Status = prompt("Please enter only: todo, doing, or done for first task:");
+}
