@@ -14,7 +14,14 @@ while (!task1Descr || task1Descr.trim() === "") {
 }
 task1Descr = task1Descr.trim();
 
-let task1Status = prompt("Enter status for first task (todo/doing/done):");
-while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done") {
-    task1Status = prompt("Please enter only: todo, doing, or done for first task:");
-}
+// Get Task 1 status with validation
+let task1Status;
+do {
+    task1Status = prompt("Enter Task 1 status (todo/doing/done):");
+    if (task1Status) {
+        task1Status = task1Status.toLowerCase();
+    }
+    if (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done") {
+        alert("INVALID STATUS! Please enter only: todo, doing, or done");
+    }
+} while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done");
