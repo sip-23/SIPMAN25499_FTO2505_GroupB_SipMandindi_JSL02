@@ -1,9 +1,5 @@
 # JSL02 Project Brief: Task Input and Status Validation System
 
-## Important Prerequisite
-
-1. Before starting this challenge, ensure that you have **corrected your JSL01 project (HTML and CSS)** using the solution provided. This will help maintain consistency and ensure you build on a solid foundation.
-2. **Check the project user stories in your student dashboard**, make sure you understand what is required for each feature.
 
 ## Overview
 
@@ -20,10 +16,16 @@ This project involves implementing a JavaScript-based task entry system where us
 - Display the title and status of completed tasks (status: "done") in the console.
 - If no tasks are marked as "done", show a motivational message in the console: "No tasks completed, let's get to work!".
 
-## Code Quality & Maintainability
+## List of technologies
 
-- Use descriptive variable names to enhance readability and maintainability.
-- Include clear comments explaining complex logic and functionality for easier understanding.
+- HTML
+- Tailwind CSS
+- Javascript
+
+## Set up
+1. Install node.js
+2. Install tailwind css
+3. install Live extensition
 
 ## Expected Outcome
 
